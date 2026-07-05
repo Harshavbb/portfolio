@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 const socialLinks = [
   { name: "GitHub", icon: <FaGithub />, link: "https://github.com/Harshavbb" },
