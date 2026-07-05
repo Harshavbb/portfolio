@@ -1,46 +1,41 @@
-import React from "react";
+import React from 'react';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <section
-      id="home"
-      className="h-screen flex items-center justify-center bg-gradient-to-r from-gray-50 via-white to-gray-100"
+    <section 
+      id="home" 
+      className="min-h-[80vh] flex items-center bg-white dark:bg-neutral-950 transition-colors duration-300"
     >
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            Hi, I’m <span className="text-blue-600">Harsha Vardhan</span> 👋
+      <div className="max-w-4xl mx-auto px-6 w-full">
+        <div className="max-w-2xl">
+          
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100 mb-6">
+            Hi, I'm Harsha.
           </h1>
-          <p className="text-lg text-gray-600 max-w-md">
-            A passionate <span className="font-medium text-gray-900">Software Engineer</span> 
-            specialized in building scalable web apps with{" "}
-            <span className="text-blue-600">React, Node.js, and Spring Boot</span>.  
-            I love solving problems and bringing ideas to life.
+          
+          <h2 className="text-xl sm:text-2xl font-medium text-neutral-600 dark:text-neutral-400 mb-8 leading-snug">
+            A software engineer focused on building robust backend architectures and clean, responsive interfaces.
+          </h2>
+          
+          <p className="text-base text-neutral-500 dark:text-neutral-400 mb-10 leading-relaxed max-w-xl">
+            I specialize in full-stack development, leveraging tools like React, Java Spring Boot, Node.js, and relational databases to design scalable systems and resolve complex engineering challenges.
           </p>
-          <div className="flex space-x-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
+          
+          <div className="flex flex-wrap items-center gap-4">
+            <a 
+              href="#projects" 
+              className="px-6 py-3 text-sm font-semibold bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors rounded-sm"
             >
               View Projects
             </a>
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-gray-400 text-gray-800 font-medium rounded-lg hover:bg-gray-100 transition"
+            <a 
+              href="#contact" 
+              className="px-6 py-3 text-sm font-semibold text-neutral-900 dark:text-neutral-100 border border-neutral-300 dark:border-neutral-700 hover:border-neutral-900 dark:hover:border-neutral-100 transition-colors rounded-sm"
             >
-              Contact Me
+              Get in Touch
             </a>
           </div>
-        </div>
 
-        {/* Right Content - Illustration / Profile */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" // temporary image, replace with your photo
-            alt="Profile"
-            className="w-72 h-72 object-cover rounded-full border-4 border-blue-600 shadow-xl"
-          />
         </div>
       </div>
     </section>

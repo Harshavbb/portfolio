@@ -5,7 +5,7 @@ const socialLinks = [
   { name: "GitHub", icon: <FaGithub />, link: "https://github.com/Harshavbb" },
   { name: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/harshavardhan-bandarupalli-a5641b247/" },
   { name: "Email", icon: <FaEnvelope />, link: "mailto:harsha.vbb@gmail.com" },
-  { name: "X", icon: <FaXTwitter />, link: "https://twitter.com/yourusername" },
+
 ];
 
 const Footer: React.FC = () => {
